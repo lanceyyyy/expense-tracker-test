@@ -164,7 +164,7 @@ export default function ExpenseTable({ expenses, setExpenses }) {
                     <Pencil className="h-4 w-4" />
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="sm:max-w-[425px]">
+                <DialogContent className="sm:max-w-[425px] dark:bg-[#1F2937]">
                   <DialogHeader>
                     <DialogTitle>Edit Expense</DialogTitle>
                   </DialogHeader>
