@@ -14,16 +14,21 @@ An **Expense Tracker Web App** built using **React, TanStack Table, Recharts, an
 
 ## Getting Started
 
-First, run the development server:
+### Clone the Repository
+
+```sh
+git clone https://github.com/yourusername/expense-tracker.git
+cd expense-tracker
+```
 
 ```bash
+npm install
+# or
+npm install --force
+```
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 ## 📁 Project Structure
@@ -47,25 +52,6 @@ bun dev
 ```
 
 ---
-
-## Getting Started
-
-### Clone the Repository
-
-```sh
-git clone https://github.com/yourusername/expense-tracker.git
-cd expense-tracker
-```
-
-```bash
-npm install
-# or
-npm install --force
-```
-
-```
-npm run dev
-```
 
 ### 📌 Component Breakdown
 
