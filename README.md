@@ -21,11 +21,15 @@ git clone https://github.com/yourusername/expense-tracker.git
 cd expense-tracker
 ```
 
+### Install node modules
+
 ```bash
 npm install
 # or
 npm install --force
 ```
+
+### Run Locally
 
 ```
 npm run dev
