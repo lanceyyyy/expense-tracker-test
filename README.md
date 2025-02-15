@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📌 Expense Tracker App
+
+An **Expense Tracker Web App** built using **React, TanStack Table, Recharts, and ShadCN** for managing and visualizing expenses.
+
+## 🎯 Features
+
+✅ **Add, Edit, Delete Expenses**  
+✅ **Store Expenses in `localStorage`** for persistence  
+✅ **Sort Expenses by Date (Ascending/Descending)**  
+✅ **Filter by Month & Year**  
+✅ **Search Expenses** with Global Search  
+✅ **Responsive UI** using TailwindCSS  
+✅ **Visualize Expenses** with a Pie Chart
 
 ## Getting Started
 
@@ -14,23 +26,95 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Project Structure
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+📂 src
+├── 📂 components
+│    ├── 📂 ui/ # UI components from ShadCN
+│    ├── ExpenseForm.jsx # Form to add/edit expenses
+│    ├── ExpenseTable.jsx # Table displaying expenses
+│    ├── ExpenseGraph.jsx # Pie chart visualization
+│    ├── ExpenseCards.jsx # Summary cards
+│    ├── ExpenseTracker.jsx # Main
+│    ├── ThemeToggle.jsx # Light/Dark mode toggle
+├── hooks
+│    ├── useWidthSize.js # Custom hook for responsive design
+├── 📂 public
+├── 📜 package.json
+├── 📜 README.md
+└── ...
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+### Clone the Repository
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+git clone https://github.com/yourusername/expense-tracker.git
+cd expense-tracker
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm install
+# or
+npm install --force
+```
 
-## Deploy on Vercel
+```
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📌 Component Breakdown
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🔹 Expense Form (ExpenseForm.jsx)
+
+- Allows users to add or edit expenses.
+- Stores form state using useState.
+- Updates localStorage when submitting.
+
+🔹 Expense Table (ExpenseTable.jsx)
+
+- Displays all expenses in a structured table.
+- Supports:
+  - Sorting (ascending/descending by date)
+  - Filtering (by month/year)
+  - Global search
+  - Pagination
+- Uses TanStack Table for efficient rendering.
+
+🔹 Expense Graph (ExpenseGraph.jsx)
+
+- Uses Recharts to display monthly expenses as a Pie Chart.
+- Automatically updates when expenses change.
+
+🔹 Custom Hook (useWidthSize.js)
+
+- Tracks screen width changes dynamically.
+- Helps with responsive UI adjustments.
+
+### 🎨 Customization
+
+- Modify colors, fonts, and UI styles inside:
+
+  - tailwind.config.js
+  - components/ui/
+
+## 🚀 Improvements that can be made
+
+### Authentication & User Accounts
+
+- Add user authentication using Firebase Auth, Supabase, or NextAuth.
+- Allow users to sign in & manage their own expenses instead of using localStorage.
+
+### Database Storage (Instead of localStorage)
+
+- Use Database to store expenses securely.
+- This allows multi-device sync and persistent data storage.
+
+### Export & Import Expenses
+
+- Allow users to download their expenses as a CSV or JSON file.
+- Implement an import feature to load expenses from a file.
