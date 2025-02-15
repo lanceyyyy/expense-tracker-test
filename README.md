@@ -108,3 +108,41 @@ npm run dev
 
 - Allow users to download their expenses as a CSV or JSON file.
 - Implement an import feature to load expenses from a file.
+
+# Submission Explanation
+
+When developing the expense tracker app, I made several key choices to ensure usability, simplicity, and efficiency.
+
+#### Tech Stack – Next.js
+
+I chose Next.js primarily for its React-based framework, making it easier to structure the app. Since this is a client-side application, I did not use server-side rendering (SSR) or API routes. Instead, I handled all data storage using localStorage, allowing users to persist their expenses without requiring a backend. This approach keeps the app lightweight and accessible without additional infrastructure.
+
+#### Data Storage – localStorage
+
+I used localStorage to store expense data directly in the user's browser. This eliminates the need for a database and provides a simple way to persist data across sessions. While this method works well for a expense tracker, it does have limitations, such as no automatic syncing across devices.
+
+#### Data Visualization – Recharts
+
+For the graph, I chose Recharts because it integrates well with React and provides an easy way to display expense trends visually. This helps users analyze their spending habits in an intuitive format.
+
+#### Table Management – TanStack Table
+
+I used TanStack Table to create an interactive and efficient expense table. It supports sorting, filtering, and pagination, making it easier for users to navigate their expenses effectively.
+
+#### UI/UX & Design Challenges
+
+One of the biggest challenges I faced was designing the interface and selecting a color palette. I wanted the app to feel modern, clean, and readable, but choosing the right colors took time. I experimented with multiple color schemes to balance aesthetics and usability, ensuring good contrast for readability and a visually appealing layout.
+
+### How the Solution Meets the Objective
+
+1. Providing an intuitive form for users to add expenses.
+
+2. Offering a structured table for managing and viewing expenses.
+
+3. Using a graph to visually represent expenses.
+
+4. Implementing localStorage to persist data without a backend.
+
+5. Designing a simple and user-friendly UI to enhance usability.
+
+6. By leveraging Next.js for UI structure, localStorage for data persistence, Recharts for visualization, and TanStack Table for data management, the app is an efficient, lightweight, and user-friendly solution for tracking expenses.
