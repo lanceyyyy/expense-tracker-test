@@ -17,7 +17,7 @@ An **Expense Tracker Web App** built using **React, TanStack Table, Recharts, an
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/expense-tracker.git
+git clone https://github.com/lanceyyyy/expense-tracker-test.git
 cd expense-tracker
 ```
 
